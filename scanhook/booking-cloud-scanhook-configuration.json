@@ -1,0 +1,12 @@
+{
+    "properties": {
+        "EncryptionAlgorithm": {
+            "description": "Encryption algorithm for SSE",
+            "default": "AES256",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "definitions": {},
+    "typeName": "Booking::Cloud::ScanHook"
+}
