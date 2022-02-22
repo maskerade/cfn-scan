@@ -1,0 +1,23 @@
+{
+    "AWS::S3::Bucket": {
+        "resourceProperties": {
+            "AccessControl": "BucketOwnerFullControl",
+            "AnalyticsConfigurations": [],
+            "BucketEncryption": {
+                "ServerSideEncryptionConfiguration": [
+                    {
+                        "ServerSideEncryptionByDefault": {
+                            "SSEAlgorithm": "AES256"
+                        }
+                    }
+                ]
+            },
+            "BucketName": "encryptedbucket-us-west-2-${AWS::AccountId}"
+        }
+    },
+    "AWS::SQS::Queue": {
+        "resourceProperties": {
+            "NotValid": "The property of this resource is not valid."
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "targetName": "AWS::S3::Bucket",
+    "targetLogicalId": "f6d2a9e5-c8d3-4005-897d-9276175c6cc1",
+    "targetModel": {
+      "resourceProperties": {
+        "AccelerateConfiguration": {
+          "AccelerationStatus": "Suspended"
+        },
+        "AccessControl": "AuthenticatedRead",
+        "AnalyticsConfigurations": [],
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": []
+        },
+        "BucketName": "00",
+        "CorsConfiguration": {
+          "CorsRules": []
+        },
+        "IntelligentTieringConfigurations": [],
+        "InventoryConfigurations": [],
+        "LifecycleConfiguration": {
+          "Rules": []
+        },
+        "LoggingConfiguration": {
+          "DestinationBucketName": "",
+          "LogFilePrefix": ""
+        },
+        "MetricsConfigurations": [],
+        "NotificationConfiguration": {
+          "EventBridgeConfiguration": {
+            "EventBridgeEnabled": false
+          },
+          "LambdaConfigurations": [],
+          "QueueConfigurations": [],
+          "TopicConfigurations": []
+        },
+        "ObjectLockConfiguration": {
+          "ObjectLockEnabled": "Enabled",
+          "Rule": {
+            "DefaultRetention": {
+              "Years": 0,
+              "Days": 0,
+              "Mode": "COMPLIANCE"
+            }
+          }
+        },
+        "ObjectLockEnabled": false,
+        "OwnershipControls": {
+          "Rules": []
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": false,
+          "BlockPublicPolicy": false,
+          "IgnorePublicAcls": false,
+          "RestrictPublicBuckets": false
+        },
+        "ReplicationConfiguration": {
+          "Role": "",
+          "Rules": []
+        },
+        "Tags": [],
+        "VersioningConfiguration": {
+          "Status": "Enabled"
+        },
+        "WebsiteConfiguration": {
+          "ErrorDocument": "",
+          "IndexDocument": "",
+          "RoutingRules": [],
+          "RedirectAllRequestsTo": {
+            "HostName": "",
+            "Protocol": "http"
+          }
+        },
+        "Arn": "",
+        "DomainName": "",
+        "DualStackDomainName": "",
+        "RegionalDomainName": "",
+        "WebsiteURL": "http://00"
+      }
+    }
+  }
