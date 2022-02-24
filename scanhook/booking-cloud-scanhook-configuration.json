@@ -1,9 +1,11 @@
 {
     "properties": {
-        "EncryptionAlgorithm": {
-            "description": "Encryption algorithm for SSE",
-            "default": "AES256",
-            "type": "string"
+        "EnabledChecks": {
+            "description": "Default Checks to be enabled",
+            "default": [
+                "CKV_AWS_19"
+            ],
+            "type": "array"
         }
     },
     "additionalProperties": false,

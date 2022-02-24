@@ -34,7 +34,7 @@ class HookHandlerRequest(BaseHookHandlerRequest):
 
 @dataclass
 class TypeConfigurationModel(BaseModel):
-    EncryptionAlgorithm: Optional[str]
+    EnabledChecks: Optional[Sequence[Any]]
 
     @classmethod
     def _deserialize(
@@ -44,7 +44,7 @@ class TypeConfigurationModel(BaseModel):
         if not json_data:
             return None
         return cls(
-            EncryptionAlgorithm=json_data.get("EncryptionAlgorithm"),
+            EnabledChecks=json_data.get("EnabledChecks"),
         )
 
 
