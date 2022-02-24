@@ -85,7 +85,6 @@ def pre_create_handler(
             progress.status = OperationStatus.FAILED
             progress.message = f"Failed Hook due to compliance checks failing for {target_name} resource."
             progress.errorCode = HandlerErrorCode.NonCompliant
-            progress.message = "One or more template compliance checks have failed, check logs for details"
 
     except TypeError as e:
         # exceptions module lets CloudFormation know the type of failure that occurred
